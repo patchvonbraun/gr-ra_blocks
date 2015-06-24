@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='ASCII'?>
+<block>
+  <name>RA:Synchronous Folder II</name>
+  <key>ra_synch_folder2</key>
+  <category>RA Blocks</category>
+  <import>import ra_synch_folder2 as sf2xx</import>
+  <make>sf2xx.ra_synch_folder2(
+	samp_rate=$samp_rate,
+	vecsize=$vecsize,
+	folding=$folding,
+	pulse_rate=$pulse_rate,
+)</make>
+  <callback>set_samp_rate($samp_rate)</callback>
+  <callback>set_vecsize($vecsize)</callback>
+  <callback>set_folding($folding)</callback>
+  <callback>set_pulse_rate($pulse_rate)</callback>
+  <param>
+    <name>Input sample rate</name>
+    <key>samp_rate</key>
+    <value>1000</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Out Vector Size</name>
+    <key>vecsize</key>
+    <value>500</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Folding Ratio</name>
+    <key>folding</key>
+    <value>5</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Pulse Rate</name>
+    <key>pulse_rate</key>
+    <value>0.7477</value>
+    <type>float</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <vlen>1</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>$vecsize</vlen>
+  </source>
+  <doc>
+A pulsar folder that uses an IIR filter to process the output vector, rather than strict folding. It
+produces a continuous output, rather than a "integrate and dump" output.
+
+It automatically resamples the input to an appropriate rate to produce little-to-no "slip".
+  </doc>
+</block>

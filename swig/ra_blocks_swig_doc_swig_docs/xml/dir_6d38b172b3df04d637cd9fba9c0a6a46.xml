@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_6d38b172b3df04d637cd9fba9c0a6a46" kind="dir">
+    <compoundname>/home/mleech/gr-ra_blocks/trunk/include/ra_blocks</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="slicer_8h">slicer.h</innerfile>
+    <innerfile refid="synch__clock_8h">synch_clock.h</innerfile>
+    <innerfile refid="synch__detect_8h">synch_detect.h</innerfile>
+    <innerfile refid="synch__folder_8h">synch_folder.h</innerfile>
+    <innerfile refid="vector__power_8h">vector_power.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mleech/gr-ra_blocks/trunk/include/ra_blocks/"/>
+  </compounddef>
+</doxygen>

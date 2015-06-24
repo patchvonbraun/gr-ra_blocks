@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>/home/mleech/gr-ra_blocks/trunk/include</compoundname>
+    <innerdir refid="dir_6d38b172b3df04d637cd9fba9c0a6a46">/home/mleech/gr-ra_blocks/trunk/include/ra_blocks</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mleech/gr-ra_blocks/trunk/include/"/>
+  </compounddef>
+</doxygen>

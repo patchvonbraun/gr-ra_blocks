@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.3.1">
+  <compound refid="classgr_1_1ra__blocks_1_1slicer" kind="class"><name>gr::ra_blocks::slicer</name>
+    <member refid="classgr_1_1ra__blocks_1_1slicer_1ad7f724b3bc81bc2b87d7f2a25627ab6e" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1slicer_1a3abcb7e18e0d832355c52b01d08bf589" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1slicer_1ab4f20c94bb3db97170298dfb6250e3f2" kind="function"><name>set_thresh</name></member>
+  </compound>
+  <compound refid="classgr_1_1ra__blocks_1_1synch__clock" kind="class"><name>gr::ra_blocks::synch_clock</name>
+    <member refid="classgr_1_1ra__blocks_1_1synch__clock_1affce1207a74883061e8b1a40ebecbfb3" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__clock_1a758720ff69bd6211d32c76fe53bcbebb" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__clock_1ace020d359c4a9de882252a1f59248a35" kind="function"><name>set_clkdiv</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__clock_1a7e72b738d101041ef2f70ab272bef413" kind="function"><name>set_hval</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__clock_1ac8d3b1cb3a8598f5a243522204702df3" kind="function"><name>set_lval</name></member>
+  </compound>
+  <compound refid="classgr_1_1ra__blocks_1_1synch__detect" kind="class"><name>gr::ra_blocks::synch_detect</name>
+    <member refid="classgr_1_1ra__blocks_1_1synch__detect_1a0fffaf4a4866bbfe91fd2e46e89cdf92" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__detect_1a03df0c95a4a33fbc19cefae07b109cb4" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__detect_1afcb2e8d4cc6d09fe050f75b0c0b9819c" kind="function"><name>set_decim</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__detect_1aab82e98c2fe5a4e1475db32cb8d4a84b" kind="function"><name>set_hval</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__detect_1a90dabd626240271995e6e6d41059ead2" kind="function"><name>set_lval</name></member>
+  </compound>
+  <compound refid="classgr_1_1ra__blocks_1_1synch__folder" kind="class"><name>gr::ra_blocks::synch_folder</name>
+    <member refid="classgr_1_1ra__blocks_1_1synch__folder_1a7450ad27394d02beb71dbc98497aac52" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__folder_1a6ec54f5a95096fd931109b57111788a7" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1synch__folder_1ad25482e301e278a7a1e1b8a1115c175e" kind="function"><name>set_folding</name></member>
+  </compound>
+  <compound refid="classgr_1_1ra__blocks_1_1vector__power" kind="class"><name>gr::ra_blocks::vector_power</name>
+    <member refid="classgr_1_1ra__blocks_1_1vector__power_1adfc66220591d94fa8ef2804c8834c90c" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1vector__power_1a44d336360a06a009d294dcf347959f90" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1ra__blocks_1_1vector__power_1a589929fee01cf4ea2851cf3d0275c024" kind="function"><name>set_positions</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1ra__blocks" kind="namespace"><name>gr::ra_blocks</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1ae58435122eb4dd8bdc6d6fb27b932222" kind="define"><name>RA_BLOCKS_API</name></member>
+  </compound>
+  <compound refid="slicer_8h" kind="file"><name>slicer.h</name>
+  </compound>
+  <compound refid="synch__clock_8h" kind="file"><name>synch_clock.h</name>
+  </compound>
+  <compound refid="synch__detect_8h" kind="file"><name>synch_detect.h</name>
+  </compound>
+  <compound refid="synch__folder_8h" kind="file"><name>synch_folder.h</name>
+  </compound>
+  <compound refid="vector__power_8h" kind="file"><name>vector_power.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/mleech/gr-ra_blocks/trunk/include</name>
+  </compound>
+  <compound refid="dir_6d38b172b3df04d637cd9fba9c0a6a46" kind="dir"><name>/home/mleech/gr-ra_blocks/trunk/include/ra_blocks</name>
+  </compound>
+</doxygenindex>

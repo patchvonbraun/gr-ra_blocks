@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<block>
+  <name>RA:Synchronous Folder</name>
+  <key>ra_blocks_synch_folder</key>
+  <category>RA Blocks</category>
+  <import>import ra_blocks</import>
+  <make>ra_blocks.synch_folder($outvecsize, $folding)
+  </make>
+  <callback>set_folding($folding)</callback>
+  <param>
+    <name>Out Vector Size</name>
+    <key>outvecsize</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Folding Ratio</name>
+    <key>folding</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>$outvecsize</vlen>
+  </source>
+  <doc>
+Implement a simple synchronous folder for pulsar monitoring. The input samples are constrained to
+be resampled at the pulse rate * the output vector size.
+
+It produces one vecsize vector at a rate based on the folding ratio.
+  </doc>
+</block>

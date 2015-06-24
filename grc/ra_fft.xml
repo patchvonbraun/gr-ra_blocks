@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='ASCII'?>
+<block>
+  <name>RA:FFT</name>
+  <key>ra_fft</key>
+  <category>RA Blocks</category>
+  <import>import ra_fft as rablk</import>
+  <make>rablk.ra_fft(
+	fft_size=$fft_size,
+	decim=$decim,
+)</make>
+  <callback>set_fft_size($fft_size)</callback>
+  <callback>set_decim($decim)</callback>
+  <param>
+    <name>fft_size</name>
+    <key>fft_size</key>
+    <value>2048</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>decim</name>
+    <key>decim</key>
+    <value>100</value>
+    <type>raw</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>2048</vlen>
+  </source>
+  <doc>
+Implements a FFT with built-in decimation and filtering, similar to logpowerfft, but with linear,
+rather than log-scaled, outputs.
+  </doc>
+</block>

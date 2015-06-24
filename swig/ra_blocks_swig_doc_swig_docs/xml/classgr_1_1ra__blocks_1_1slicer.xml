@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classgr_1_1ra__blocks_1_1slicer" kind="class" prot="public" abstract="yes">
+    <compoundname>gr::ra_blocks::slicer</compoundname>
+    <basecompoundref prot="public" virt="virtual">gr_sync_decimator</basecompoundref>
+    <includes refid="slicer_8h" local="no">slicer.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1ra__blocks_1_1slicer_1ad7f724b3bc81bc2b87d7f2a25627ab6e" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1ra__blocks_1_1slicer" kindref="compound">slicer</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;slicer&gt; gr::ra_blocks::slicer::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mleech/gr-ra_blocks/trunk/include/ra_blocks/slicer.h" line="40" bodyfile="/home/mleech/gr-ra_blocks/trunk/include/ra_blocks/slicer.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1ra__blocks_1_1slicer_1a3abcb7e18e0d832355c52b01d08bf589" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1ra__blocks_1_1slicer_1ad7f724b3bc81bc2b87d7f2a25627ab6e" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::ra_blocks::slicer::make</definition>
+        <argsstring>(int decim, float thresh)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>decim</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1ra__blocks_1_1slicer" kindref="compound">ra_blocks::slicer</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1ra__blocks_1_1slicer" kindref="compound">ra_blocks::slicer</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1ra__blocks_1_1slicer_1a3abcb7e18e0d832355c52b01d08bf589" kindref="member">ra_blocks::slicer::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mleech/gr-ra_blocks/trunk/include/ra_blocks/slicer.h" line="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1ra__blocks_1_1slicer_1ab4f20c94bb3db97170298dfb6250e3f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::ra_blocks::slicer::set_thresh</definition>
+        <argsstring>(float thresh)=0</argsstring>
+        <name>set_thresh</name>
+        <param>
+          <type>float</type>
+          <declname>thresh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mleech/gr-ra_blocks/trunk/include/ra_blocks/slicer.h" line="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr_sync_decimator</label>
+      </node>
+      <node id="0">
+        <label>gr::ra_blocks::slicer</label>
+        <link refid="classgr_1_1ra__blocks_1_1slicer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>gr_sync_decimator</label>
+      </node>
+      <node id="2">
+        <label>gr::ra_blocks::slicer</label>
+        <link refid="classgr_1_1ra__blocks_1_1slicer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mleech/gr-ra_blocks/trunk/include/ra_blocks/slicer.h" line="38" bodyfile="/home/mleech/gr-ra_blocks/trunk/include/ra_blocks/slicer.h" bodystart="37" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ra__blocks_1_1slicer_1a3abcb7e18e0d832355c52b01d08bf589" prot="public" virt="non-virtual"><scope>gr::ra_blocks::slicer</scope><name>make</name></member>
+      <member refid="classgr_1_1ra__blocks_1_1slicer_1ab4f20c94bb3db97170298dfb6250e3f2" prot="public" virt="pure-virtual"><scope>gr::ra_blocks::slicer</scope><name>set_thresh</name></member>
+      <member refid="classgr_1_1ra__blocks_1_1slicer_1ad7f724b3bc81bc2b87d7f2a25627ab6e" prot="public" virt="non-virtual"><scope>gr::ra_blocks::slicer</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

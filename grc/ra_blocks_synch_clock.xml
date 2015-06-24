@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<block>
+  <name>RA: Synch Clock</name>
+  <key>ra_blocks_synch_clock</key>
+  <category>RA Blocks</category>
+  <import>import ra_blocks</import>
+  <make>ra_blocks.synch_clock($clkdiv, $hval, $lval)</make>
+  <callback>set_clkdiv ($clkdiv)</callback>
+  <callback>set_lval ($lval)</callback>
+  <callback>set_hval ($hval)</callback>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>Clock Divider</name>
+    <key>clkdiv</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>High Value</name>
+    <key>hval</key>
+    <value>1.0</value>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Low Value</name>
+    <key>lval</key>
+    <value>-1.0</value>
+    <type>float</type>
+  </param>
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>

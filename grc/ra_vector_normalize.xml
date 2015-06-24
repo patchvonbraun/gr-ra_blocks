@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='ASCII'?>
+<block>
+  <name>RA:Vector Normalize</name>
+  <key>vector_normalize</key>
+  <category>RA Blocks</category>
+  <import>import ra_vector_normalize as ravecn</import>
+  <make>ravecn.ra_vector_normalize(
+	vecsize=$vecsize,
+)</make>
+  <callback>set_vecsize($vecsize)</callback>
+  <param>
+    <name>Vector Size</name>
+    <key>vecsize</key>
+    <value>1024</value>
+    <type>raw</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <vlen>1024</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>1024</vlen>
+  </source>
+</block>

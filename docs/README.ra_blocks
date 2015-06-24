@@ -1,0 +1,11 @@
+This is the ra_blocks-write-a-block package meant as a guide to building
+out-of-tree packages. To use the ra_blocks blocks, the Python namespaces
+is in 'ra_blocks', which is imported as:
+
+    import ra_blocks
+
+See the Doxygen documentation for details about the blocks available
+in this package. A quick listing of the details can be found in Python
+after importing by using: 
+
+    help(ra_blocks)

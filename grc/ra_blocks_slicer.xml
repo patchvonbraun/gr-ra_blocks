@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<block>
+  <name>RA:Oblivious Slicer</name>
+  <key>ra_blocks_slicer</key>
+  <category>RA Blocks</category>
+  <import>import ra_blocks</import>
+  <make>ra_blocks.slicer($decim, $thresh, $ratio)</make>
+  <callback>set_thresh($thresh)</callback>
+  <callback>set_ratio($ratio)</callback>
+  <param>
+    <name>Samples</name>
+    <key>decim</key>
+    <value>100</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Threshold</name>
+    <key>thresh</key>
+    <value>1.5</value>
+    <type>float</type>
+  </param>
+  <param>
+	  <name>Enable Ratiometric output</name>
+	  <key>ratio</key>
+	  <value>0</value>
+	  <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+  <doc>
+Implements an "oblivious slicer" used to compute differential power from a stream that is switched
+(typically at a few Hz) between "Sky" and a reference. This method was originally elucidated by
+Ken Tapping at DRAO, Penticton, BC, Canada.
+
+Use "Threshold" to set the minimum acceptable ratio between "high" and "low" to compute the
+differential, otherwise it will simply return the average of the data.
+
+Use "Samples" to set the number of samples that are buffered to make the comparisons, and also
+set the decimation implied by this block.
+  </doc>
+</block>
+
